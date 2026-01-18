@@ -1,0 +1,35 @@
+{
+  "name": "gpt4_express",
+  "version": "1.0.0",
+  "description": "Необходимо создать API для оставшихся разделов страницы:\r - добавить энд-поинты в роутер\r - добавить контроллелы для передачи роутером в них запросов\r - добавить модели для работы с файлами (чтение и запись)\r - добавить валидаторы для защиты стуктуры записываемых данных",
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "homepage": "https://github.com/nothishit/WebProgrammingLabs#readme",
+  "bugs": {
+    "url": "https://github.com/nothishit/WebProgrammingLabs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nothishit/WebProgrammingLabs.git"
+  },
+  "license": "ISC",
+  "author": "Egor",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "build": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1",
+    "node": "^24.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
