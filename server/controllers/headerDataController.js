@@ -22,7 +22,7 @@ const postHeaderData = (req, res, next) => {
     const data = req.body;
 
     isHeaderDataValid(data);
-    
+
     postHeaderDataModel(JSON.stringify(data));
     res.status(200).json({
       message: "Данные успешно обновлены",

@@ -1,11 +1,14 @@
+// валидатор наличия длины у объекта
 const objectLength = (obj) => Object.values(obj).length;
 
+// валиадатор наличия длина у массива
 const isArrayHasLength = (arr) => {
   if (Array.isArray(arr) && arr.length === 0) return null;
 
   return arr.length;
 };
 
+// валидатор наличия длины у объекта
 const isObjectHasLength = (obj) => {
   if (typeof obj === "object" && objectLength(obj) === 0) return null;
 

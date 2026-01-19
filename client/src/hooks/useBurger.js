@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-// блокируем и разблокируем скролл во время открытия модального окна
 const body = document.querySelector("body");
 export const noOverflow = () => body.classList.add("oh");
 export const overflow = () => body.classList.remove("oh");
@@ -42,10 +41,8 @@ const useBurger = () => {
 
     updateBurgerState();
 
-    // вешаем прослушку события резсайза для обновления состояния бургера
     window.addEventListener("resize", updateBurgerState);
 
-    // возвращаем функцию очистки прослушки на ресайз окна
     return () => {
       window.removeEventListener("resize", updateBurgerState);
     };

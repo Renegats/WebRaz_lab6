@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
+// Header роутер
 const {
   getHeaderData,
   postHeaderData,
@@ -8,6 +9,7 @@ const {
 
 router.route("/header").get(getHeaderData).post(postHeaderData);
 
+// Hero роутер
 const {
   getHeroData,
   postHeroData,
@@ -15,6 +17,7 @@ const {
 
 router.route("/hero").get(getHeroData).post(postHeroData);
 
+// Brands роутер
 const {
   getBrandsData,
   postBrandsData,
@@ -22,6 +25,7 @@ const {
 
 router.route("/brands").get(getBrandsData).post(postBrandsData);
 
+// Future Here роутер
 const {
   getFutureHereData,
   postFutureHereData,
@@ -29,6 +33,7 @@ const {
 
 router.route("/future-here").get(getFutureHereData).post(postFutureHereData);
 
+// WhatIsGpt роутер
 const {
   getWhatIsGptData,
   postWhatIsGptData,
@@ -36,6 +41,7 @@ const {
 
 router.route("/what-is-gpt").get(getWhatIsGptData).post(postWhatIsGptData);
 
+// EarlyAccess роутер
 const {
   getEarlyAccessData,
   postEarlyAccessData,
@@ -43,6 +49,7 @@ const {
 
 router.route("/early_access").get(getEarlyAccessData).post(postEarlyAccessData);
 
+// EarlyAccessCard роутер
 const {
   getEarlyAccessCardData,
   postEarlyAccessCardData,
@@ -50,6 +57,7 @@ const {
 
 router.route("/early_access_card").get(getEarlyAccessCardData).post(postEarlyAccessCardData);
 
+// Examples роутер
 const {
   getExamplesData,
   postExamplesData,
@@ -57,6 +65,7 @@ const {
 
 router.route("/examples").get(getExamplesData).post(postExamplesData);
 
+// Footer роутер
 const {
   getFooterData,
   postFooterData,
